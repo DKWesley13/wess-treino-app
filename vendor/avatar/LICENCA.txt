@@ -1,0 +1,6 @@
+Avatar humano e animações (wt_human.glb, wt_human_anims2.glb)
+Licença: CC0 1.0 (domínio público) — uso comercial permitido, sem obrigação de crédito.
+Origem: pacotes de animação humana do Mesh2Motion (github.com/Mesh2Motion), retarget da
+Quaternius Universal Animation Library, conforme catalogado em github.com/AssiamahS/opengym3d
+(assets/ASSET_LIBRARY.json: motion/cc0/*). Arquivos reduzidos pelo WESS TREINO às animações:
+Pushup, Jumping Jacks, Crawl, Idle_Subtle, Chest_Open, Jog, Sprint, Walk.

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "pilotExercise": "legpress45",
+  "status": "PENDING_AUTHORIZED_HUMAN_VIDEO",
+  "policy": "Somente mídia própria gravada com cessão de imagem ou licença comercial comprovada para redistribuição offline.",
+  "videos": {
+    "legpress45": {
+      "expectedFile": "./videos/legpress45.mp4",
+      "available": false,
+      "licenseStatus": "PENDENTE — aguardando gravação própria ou aquisição licenciada",
+      "fallback": "Foto 3D + Guia Esquemático 2D (Provisório)"
+    }
+  }
+}
