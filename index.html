@@ -743,9 +743,9 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
 .q2-fb{margin:-2px 4px 8px;padding:10px 12px;border-radius:12px;background:rgba(0,224,255,.08);color:#a5f3fc;font-size:12.5px;animation:q2in .3s}.q2-ex{display:flex;justify-content:center;margin:4px 0 8px}.q2-ex img{width:100%;max-height:150px;object-fit:contain;border-radius:14px;background:#0b1424}
 .q2-input{width:100%;font:800 26px system-ui;text-align:center;padding:16px;border-radius:16px;border:1.5px solid rgba(125,211,252,.3);background:#06101f;color:#fff;margin-top:24px}
 .q2-ruler-val{text-align:center;margin:26px 0 8px}.q2-ruler-val b{font:900 44px system-ui;color:#fff}.q2-ruler-val small{color:#7dd3fc;font-weight:800}
-.q2-ruler{overflow-x:auto;scroll-snap-type:x mandatory;position:relative;height:64px;-ms-overflow-style:none;scrollbar-width:none;mask-image:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent)}.q2-ruler::-webkit-scrollbar{display:none}
-.q2-ruler-in{display:flex;align-items:flex-end;height:56px;padding:0 50%}.q2-ruler-in i{flex:0 0 12px;height:18px;border-left:2px solid rgba(148,163,184,.45);scroll-snap-align:center;position:relative}.q2-ruler-in i.M{height:34px;border-color:#cbd5e1}.q2-ruler-in b{position:absolute;bottom:38px;left:-12px;font:700 10px system-ui;color:#94a3b8}
-.q2-ruler-needle{width:3px;height:46px;background:#00e0ff;margin:-54px auto 0;border-radius:3px;box-shadow:0 0 12px #00e0ff;position:relative;pointer-events:none}.q2-ruler-btns{display:flex;justify-content:center;gap:16px;margin-top:16px}.q2-ruler-btns .wt-mini-btn{width:52px;height:44px;font-size:22px}
+.q2-ruler{overflow-x:auto;scroll-snap-type:x mandatory;position:relative;height:84px;-ms-overflow-style:none;scrollbar-width:none;mask-image:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent)}.q2-ruler::-webkit-scrollbar{display:none}
+.q2-ruler-in{display:flex;align-items:center;height:76px;padding:0 50%}.q2-ruler-in i{flex:0 0 12px;height:14px;border-left:2px solid rgba(148,163,184,.55);scroll-snap-align:center;position:relative;transition:height .08s linear}.q2-ruler-in i.M{border-color:#cbd5e1}.q2-ruler-in i.c{border-left:3px solid #00e0ff;box-shadow:0 0 10px #00e0ff}.q2-ruler-in b{position:absolute;bottom:38px;left:-12px;font:700 10px system-ui;color:#94a3b8}
+.q2-ruler-needle{display:none;width:3px;height:46px;background:#00e0ff;margin:-54px auto 0;border-radius:3px;box-shadow:0 0 12px #00e0ff;position:relative;pointer-events:none}.q2-ruler-btns{display:flex;justify-content:center;gap:16px;margin-top:16px}.q2-ruler-btns .wt-mini-btn{width:52px;height:44px;font-size:22px}
 .q2-note{color:#94a3b8;font-size:12.5px;text-align:center;margin-top:12px}.q2-fact{padding:18px;border-radius:18px;background:linear-gradient(135deg,rgba(0,112,243,.18),rgba(0,224,255,.06));border:1px solid rgba(125,211,252,.25);margin-top:12px}.q2-fact p{font-size:17px;line-height:1.45;margin:0 0 10px}.q2-fact small{color:#7dd3fc}
 .q2-days{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}.q2-day{min-width:56px;height:52px;border-radius:14px;border:1.5px solid rgba(125,211,252,.2);background:#0a1628;color:#cbd5e1;font:800 14px system-ui;display:grid;place-items:center;text-transform:uppercase}.q2-day.on{background:linear-gradient(135deg,#00e0ff,#0070f3);color:#fff;border-color:transparent}.q2-days.sm .q2-day{min-width:36px;height:32px;font-size:10px;border-radius:9px}
 .q2-hold{position:relative;width:100%;height:64px;margin-top:22px;border-radius:32px;border:2px solid #00e0ff;background:#06101f;color:#fff;font:800 16px system-ui;overflow:hidden}.q2-hold i{position:absolute;inset:0;width:0;background:linear-gradient(90deg,#00e0ff,#0070f3);opacity:.55}.q2-hold.holding i{width:100%;transition:width 1.5s linear}.q2-hold span{position:relative}.q2-hold.done{background:linear-gradient(90deg,#00e0ff,#0070f3)}
@@ -773,6 +773,8 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
 .wt-rest-bubble button{min-width:44px;min-height:40px;border-radius:12px;border:1px solid rgba(125,211,252,.35);background:rgba(2,10,24,.6);color:#e0f2fe;font-weight:800}.wt-rest-bubble button.sk{background:linear-gradient(135deg,#00e0ff,#0070f3);border:0;color:#fff}
 .wt-auto-rest{font-size:10px!important;letter-spacing:.5px}.wt-auto-rest[aria-pressed="false"]{opacity:.45}
 .wt-ios-hint{position:fixed;left:10px;right:10px;bottom:calc(80px + env(safe-area-inset-bottom));z-index:9500;display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:18px;background:#0b1a33;border:1px solid rgba(0,224,255,.4);box-shadow:0 12px 30px rgba(0,0,0,.6);color:#e2e8f0;animation:q2in .3s ease}.wt-ios-hint img{width:44px;height:44px;border-radius:11px}.wt-ios-hint div{flex:1}.wt-ios-hint small{display:block;color:#cbd5e1;font-size:12px;margin-top:2px;line-height:1.4}.wt-ios-hint .sh{display:inline-block;padding:0 4px;border:1px solid #7dd3fc;border-radius:5px;color:#7dd3fc}.wt-ios-hint button{background:none;border:0;color:#94a3b8;font-size:16px;min-width:32px;min-height:32px}
+.wt-confirm{position:fixed;inset:0;z-index:12000;background:rgba(1,4,10,.72);display:flex;align-items:center;justify-content:center;padding:20px;animation:q2in .2s ease}.wt-confirm-card{width:100%;max-width:420px;background:linear-gradient(180deg,#0b1d38,#06122a);border:1px solid rgba(0,224,255,.35);border-radius:22px;padding:20px 18px 16px;box-shadow:0 20px 50px rgba(0,0,0,.6),0 0 24px rgba(0,180,255,.15);text-align:center;color:#e2e8f0}.wt-confirm-ic{width:52px;height:52px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;font-size:24px;background:rgba(0,224,255,.12);border:1px solid rgba(0,224,255,.4)}.wt-confirm-ic.danger{background:rgba(255,80,80,.12);border-color:rgba(255,107,107,.5)}.wt-confirm-card h3{font-size:17px;line-height:1.35;margin:0 0 8px}.wt-confirm-card p{font-size:13px;color:#a8b3c4;margin:6px 0}.wt-confirm-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.wt-confirm-actions button{min-height:48px}.wt-cta-glow.danger{background:linear-gradient(135deg,#ff5a5f,#d61f45)!important;box-shadow:0 0 18px rgba(255,80,90,.35)!important}
+.q2-ruler-in b{display:none}
 </style>
 </head>
 <body>
@@ -1185,6 +1187,7 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
 
 <div id="wtToast" class="wt-toast" role="status" aria-live="polite"></div>
 
+<script src="./vendor/musclemap.js"></script>
 <script>
 'use strict';
 (() => {
@@ -3920,7 +3923,9 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
     // backdrop: the real equipment image, darkened and slightly enlarged (depth of field)
     const bg = ctx.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, '#04122a'); bg.addColorStop(1, '#010409');
     ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
-    const im = guide5dBackdrop(ex);
+    const im = null; void guide5dBackdrop; // R30: no equipment photo behind the avatar — dark studio like the equipment images
+    { const g1 = ctx.createRadialGradient(W / 2, H * 0.78, 10, W / 2, H * 0.7, W * 0.75); g1.addColorStop(0, 'rgba(0,140,255,0.42)'); g1.addColorStop(0.45, 'rgba(0,70,170,0.18)'); g1.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g1; ctx.fillRect(0, 0, W, H);
+      const g2 = ctx.createLinearGradient(0, H * 0.62, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(1, 'rgba(0,60,140,0.22)'); ctx.fillStyle = g2; ctx.fillRect(0, H * 0.62, W, H); }
     if (im) {
       const k = Math.max(W / im.naturalWidth, H / im.naturalHeight) * 1.08;
       const dw = im.naturalWidth * k, dh = im.naturalHeight * k;
@@ -4297,7 +4302,49 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
     return zones;
   }
 
+  // R30: muscle figure drawn from MuscleMap (MIT) — detailed front/back maps, male and female, gradient shading,
+  // worked muscles glowing. Falls back to the previous drawing if the data file is missing.
+  const R30_ZONE_SLUGS = {
+    chest: ['chest', 'upperChest', 'lowerChest'], shoulders: ['deltoids', 'frontDeltoid', 'rearDeltoid'], biceps: ['biceps'], triceps: ['triceps'],
+    forearms: ['forearm'], abs: ['abs', 'upperAbs', 'lowerAbs', 'obliques', 'serratus'], back: ['upperBack', 'trapezius', 'upperTrapezius', 'lowerTrapezius', 'rhomboids', 'rotatorCuff'],
+    lowerback: ['lowerBack'], quads: ['quadriceps', 'innerQuad', 'outerQuad', 'hipFlexors'], adductors: ['adductors'], glutes: ['gluteal'], hamstrings: ['hamstring'], calves: ['calves', 'tibialis']
+  };
+  const R30_BODY = ['head', 'hair', 'neck', 'hands', 'feet', 'knees', 'ankles'];
+  function r30MuscleFigure(zones, opts) {
+    const M = window.WT_MUSCLEMAP; if (!M) return null;
+    const o = opts || {}, uid = 'mm' + Math.random().toString(36).slice(2, 8);
+    const sex = (o.sex || (prefs.profile && prefs.profile.sex)) === 'feminino' ? 'female' : 'male';
+    const level = {}; Object.entries(zones || {}).forEach(([z, l]) => (R30_ZONE_SLUGS[z] || []).forEach(sl => { if (!level[sl] || 'pse'.indexOf(l) < 'pse'.indexOf(level[sl])) level[sl] = l; }));
+    const fill = sl => R30_BODY.includes(sl) ? (sl === 'hair' ? '#1b2433' : `url(#${uid}b)`) : level[sl] === 'p' ? `url(#${uid}p)` : level[sl] === 's' ? `url(#${uid}s)` : level[sl] === 'e' ? `url(#${uid}e)` : `url(#${uid}i)`;
+    const view = side => {
+      const v = M[sex][side];
+      // base muscles first, sub-groups after (they sit on top), so colour them like their parent
+      const order = Object.keys(v.parts).sort((a, b) => (R30_BODY.includes(b) - R30_BODY.includes(a)));
+      const paths = order.map(sl => { const p = v.parts[sl]; const on = !!level[sl];
+        return [...p.common, ...p.left, ...p.right].map(d => `<path d="${d}" fill="${fill(sl)}" stroke="#05080f" stroke-width="2.2" stroke-linejoin="round"${on ? ` class="wt-mus-on" filter="url(#${uid}g)"` : ''}/>`).join(''); }).join('');
+      return `<svg x="${side === 'front' ? 4 : 116}" y="16" width="108" height="244" viewBox="${v.viewBox.join(' ')}" preserveAspectRatio="xMidYMid meet">${paths}</svg>`;
+    };
+    const keys = Object.keys(zones || {}).sort();
+    const W = o.width || 300, H = o.height || 270;
+    return `<svg class="${o.cls || 'wt-anat-fig'} wt-mm-fig" data-zones="${esc(o.dataZones != null ? o.dataZones : keys.join(','))}" role="img" aria-label="${esc(o.label || 'Mapa muscular')}"
+      viewBox="0 0 228 262" width="${W}" height="${H}" preserveAspectRatio="xMidYMid meet" style="display:block;max-width:100%;height:auto;margin:0 auto;${o.dim ? 'opacity:0.55;' : ''}">
+      <defs>
+        <linearGradient id="${uid}p" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7a7a"/><stop offset=".55" stop-color="#ef1f33"/><stop offset="1" stop-color="#8f0a17"/></linearGradient>
+        <linearGradient id="${uid}s" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc27a"/><stop offset=".55" stop-color="#ff8a12"/><stop offset="1" stop-color="#a24e05"/></linearGradient>
+        <linearGradient id="${uid}e" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0a0"/><stop offset=".6" stop-color="#e9c200"/><stop offset="1" stop-color="#7a6400"/></linearGradient>
+        <linearGradient id="${uid}i" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5f7189"/><stop offset=".6" stop-color="#43536a"/><stop offset="1" stop-color="#2b3747"/></linearGradient>
+        <linearGradient id="${uid}b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b7d95"/><stop offset="1" stop-color="#3a4859"/></linearGradient>
+        <radialGradient id="${uid}bg" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#0d2a52"/><stop offset=".6" stop-color="#06142b"/><stop offset="1" stop-color="#02060f"/></radialGradient>
+        <filter id="${uid}g" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <rect width="228" height="262" rx="14" fill="url(#${uid}bg)"/>
+      <text x="58" y="12" text-anchor="middle" font-family="system-ui,Arial" font-size="8.5" font-weight="800" fill="#7dd3fc">FRENTE</text>
+      <text x="170" y="12" text-anchor="middle" font-family="system-ui,Arial" font-size="8.5" font-weight="800" fill="#7dd3fc">COSTAS</text>
+      ${view('front')}${view('back')}
+    </svg>`;
+  }
   function anatomyFigureSvg(zones, opts) {
+    { const mm = r30MuscleFigure(zones, opts); if (mm) return mm; }
     const o = opts || {};
     const uid = 'an' + Math.random().toString(36).slice(2, 8);
     const fillFor = z => zones[z] === 'p' ? `url(#${uid}p)` : zones[z] === 's' ? `url(#${uid}s)` : zones[z] === 'e' ? `url(#${uid}e)` : `url(#${uid}o)`;
@@ -7071,14 +7118,13 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
     const realHtml = real.length ? `<div class="wt-real-photos ${real.length > 1 ? 'anim' : ''}" role="img" aria-label="Fotos reais da execução de ${esc(ex.name)}">${real.map((p, i) => `<img src="${p.src}" alt="" class="${i === 0 ? 'a' : 'b'}"/>`).join('')}</div>
       <small class="wt-credit">Foto: ${[...new Set(real.map(p => p.credit))].map(esc).join(' • ')}</small>` : '';
     host.innerHTML = `<div class="wt-sub-title">🎥 Execução real</div>
-      ${mediaHtml || realHtml || '<p class="wt-r15-fine">Ainda não há vídeo ou foto real deste exercício no app. Grave a execução com seu professor ou veja vídeos reais.</p>'}
+      ${mediaHtml || realHtml || '<p class="wt-r15-fine">Veja a execução no Guia 5D acima ou em vídeos reais.</p>'}
       ${mediaHtml && realHtml ? realHtml : ''}
       <div class="wt-real-actions">
         <a class="wt-mini-btn primary" href="${r16VideoSearchUrl(ex)}" target="_blank" rel="noopener" data-r16-video="${ex.id}">▶ Ver vídeos reais (YouTube)</a>
-        <label class="wt-mini-btn" role="button" tabindex="0" data-r16-label="1">📷 ${m ? 'Trocar' : 'Adicionar'} minha foto ou vídeo<input type="file" accept="image/*,video/*" data-r16-media="${ex.id}" hidden/></label>
         ${m ? `<button type="button" class="wt-mini-btn" data-r16="media-del" data-id="${ex.id}">✕ Remover</button>` : ''}
       </div>
-      <small class="wt-r15-fine">Sua foto ou vídeo fica só neste aparelho (não vai para o backup em JSON). Os vídeos do YouTube abrem fora do app e precisam de internet.</small>`;
+      <small class="wt-r15-fine">Os vídeos do YouTube abrem fora do app e precisam de internet.</small>`;
   }
 
   // ---------- Sugestão de carga (dupla progressão) e aquecimento — só com registro anterior ----------
@@ -7347,7 +7393,6 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
     ['Gerar novos treinos sem limite e treinos por objetivo', '1 por mês', true],
     ['Gráficos de evolução', 'últimos 90 dias', 'todo o histórico'],
     ['Desafios mensais e metas da semana', true, true],
-    ['Seus vídeos e fotos de execução em cada exercício', false, true],
     ['Prioridade em novidades e novos equipamentos', false, true]
   ];
   // Limites da conta grátis (aplicados somente quando PRO_ENFORCED = true, com a cobrança ativa).
@@ -7613,7 +7658,12 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
     let touched = false, t = null;
     ['pointerdown', 'touchstart', 'wheel'].forEach(k => r.addEventListener(k, () => { touched = true; }, { passive: true }));
     r.scrollLeft = target(); requestAnimationFrame(() => { r.scrollLeft = target(); });
-    r.addEventListener('scroll', () => { if (!touched) return; clearTimeout(t); t = setTimeout(setFromScroll, 60); });
+    // R30: 'wave' ruler — ticks grow toward the centre (bell curve) and follow the finger
+    const ticks = [...r.querySelectorAll('.q2-ruler-in i')]; let raf = 0;
+    const wave = () => { raf = 0; const c = r.scrollLeft; for (let i = Math.max(0, Math.floor(c / W) - 14), e = Math.min(ticks.length, Math.floor(c / W) + 15); i < e; i++) { const d = (i * W - c) / W; const k = Math.exp(-(d * d) / 22); ticks[i].style.height = (12 + 44 * k).toFixed(1) + 'px'; ticks[i].style.opacity = (0.3 + 0.7 * k).toFixed(2); ticks[i].classList.toggle('c', Math.abs(d) < 0.5); } };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(wave); };
+    r.addEventListener('scroll', () => { kick(); if (!touched) return; clearTimeout(t); t = setTimeout(setFromScroll, 60); });
+    requestAnimationFrame(() => requestAnimationFrame(wave));
     r.addEventListener('keydown', e => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); q2Nudge(s, e.key === 'ArrowRight' ? 1 : -1); } });
     q2RulerPaint(s);
   }
@@ -7629,10 +7679,10 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
   function q2BindHold() {
     const b = document.getElementById('q2Hold'); if (!b || q2.committed) return;
     let tm = null;
-    const start = e => { e.preventDefault(); b.classList.add('holding'); tm = setTimeout(() => { q2.committed = true; try { navigator.vibrate && navigator.vibrate(40); } catch (x) {} q2Render(); }, 1500); };
+    const start = e => { e.preventDefault(); b.classList.add('holding'); tm = setTimeout(() => { q2.committed = true; try { navigator.vibrate && navigator.vibrate([40, 60, 80]); } catch (x) {} q2Render(); setTimeout(() => { if (q2Visible()[q2Step] && q2Visible()[q2Step].type === 'hold') { q2Step++; q2Render(); } }, 650); }, 1500); };
     const stop = () => { b.classList.remove('holding'); clearTimeout(tm); };
     b.addEventListener('pointerdown', start); ['pointerup', 'pointerleave', 'pointercancel'].forEach(k => b.addEventListener(k, stop));
-    b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); q2.committed = true; setTimeout(() => { q2Render(); const n = document.querySelector('[data-q2="next"]'); if (n) n.focus(); }, 0); } });
+    b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); q2.committed = true; setTimeout(() => { q2Render(); setTimeout(() => { if (q2Visible()[q2Step] && q2Visible()[q2Step].type === 'hold') { q2Step++; q2Render(); } }, 650); }, 0); } });
   }
   function q2Build() {
     const days = q2.trainDays.filter(Boolean).length;
@@ -7973,6 +8023,39 @@ button:active, .wt-mini-btn:active, .wt-cta-glow:active, .wt-icon-btn:active, .w
     const h = document.getElementById('wtIosHint'); if (h) h.remove();
   });
   setTimeout(() => r29InstallHint(false), 12500); // after the splash
+
+  // ==================== R30: confirmações no visual do app (substitui a caixa nativa do Android/iOS) ====================
+  // window.confirm é síncrono; aqui a 1ª chamada abre a janela do app e devolve false. Ao tocar em "Confirmar",
+  // o mesmo toque é repetido e a confirmação seguinte com a mesma mensagem devolve true.
+  let r30LastClick = null, r30Allow = null, r30InClick = false;
+  const r30NativeConfirm = window.confirm.bind(window);
+  document.addEventListener('click', ev => { if (!(ev.target instanceof Element) || ev.target.closest('#wtConfirm')) return; r30LastClick = ev.target; r30InClick = true; setTimeout(() => { r30InClick = false; }, 0); }, true);
+  window.confirm = function (message) {
+    if (!r30InClick && r30Allow !== String(message == null ? '' : message)) return r30NativeConfirm(message); // not from a tap (e.g. backup chosen in the native picker): no tap to replay
+    const msg = String(message == null ? '' : message);
+    if (window.__WT_AUTOCONFIRM === true) return true; // test harness only (same as auto-accepting a native dialog)
+    if (r30Allow === msg) { r30Allow = null; return true; }
+    const target = r30LastClick;
+    r30Ask(msg, () => { r30Allow = msg; if (target && target.isConnected) target.click(); else r30Allow = null; });
+    return false;
+  };
+  function r30Ask(msg, onYes) {
+    const old = document.getElementById('wtConfirm'); if (old) old.remove();
+    const parts = msg.split(/\n\s*\n/);
+    const danger = /excluir|apagad|remover|não pode ser desfeit/i.test(msg);
+    const el = document.createElement('div'); el.id = 'wtConfirm'; el.className = 'wt-confirm'; el.setAttribute('role', 'alertdialog'); el.setAttribute('aria-modal', 'true');
+    el.innerHTML = `<div class="wt-confirm-card"><div class="wt-confirm-ic ${danger ? 'danger' : ''}">${danger ? '⚠️' : '❓'}</div>
+      <h3>${esc(parts[0])}</h3>${parts.slice(1).map(p => `<p>${esc(p)}</p>`).join('')}
+      <div class="wt-confirm-actions"><button type="button" class="wt-outline-pill" data-r30="no">Cancelar</button><button type="button" class="wt-cta-glow ${danger ? 'danger' : ''}" data-r30="yes">${danger ? 'Confirmar' : 'Continuar'}</button></div></div>`;
+    document.body.appendChild(el);
+    el.addEventListener('click', e => {
+      const b = e.target instanceof Element && e.target.closest('[data-r30]');
+      if (!b && e.target !== el) return;
+      el.remove();
+      if (b && b.dataset.r30 === 'yes') setTimeout(onYes, 0);
+    });
+    setTimeout(() => { const y = el.querySelector('[data-r30="no"]'); if (y) y.focus({ preventScroll: true }); }, 0);
+  }
 
   function r19RenderChallenges() {
     const host = document.getElementById('wtR19Challenges'); if (!host) return;

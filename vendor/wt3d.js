@@ -129,9 +129,12 @@ export function create(wrap) {
     }
     for (let i = used; i < pool.length; i++) pool[i].visible = false;
     // camera orbit (the "5D" depth): slow swing around the athlete
-    const ang = 0.55 + Math.sin(elapsed * 0.35) * 0.45;
+    const ang = 0.95 + Math.sin(elapsed * 0.25) * 0.06; // R30: steady 3/4 view (was a wide swing that confused the movement)
     const cx = (hipC.x + shC.x + toV(J('kn')).x) / 3, cy = Math.max(0.9, (hipC.y + head.y) / 2 - 0.1);
-    camera.position.set(cx + Math.sin(ang) * 7.4, cy + 1.1, Math.cos(ang) * 7.4);
+    // R30: back off for wide movements (leg press, lying exercises) so nothing is cut
+    const xs = Object.values(P).filter(v => Array.isArray(v) && v.length === 2).map(v => v[0]); const span = (Math.max(...xs) - Math.min(...xs)) * S;
+    const dist = Math.max(7.4, span * 2.6 + 2.2);
+    camera.position.set(cx + Math.sin(ang) * dist, cy + 1.1, Math.cos(ang) * dist);
     camera.lookAt(cx, cy, 0);
     renderer.render(scene, camera);
   }
@@ -179,7 +182,7 @@ export function create(wrap) {
     const box = new THREE.Box3().setFromObject(human), ctr = box.getCenter(new THREE.Vector3()), sz = box.getSize(new THREE.Vector3());
     // frame on a stable target (the clip's ground footprint), not the animated box, so the camera does not bob
     if (!human.userData.frame || human.userData.frame.clip !== clipName) { human.userData.frame = { clip: clipName, x: ctr.x, z: ctr.z, h: sz.y, low: sz.y < 1 }; }
-    const F = human.userData.frame, ang = 0.75 + Math.sin(elapsed * 0.3) * 0.45, d = F.low ? 3.6 : 5.6, ty = F.low ? 0.35 : 0.95;
+    const F = human.userData.frame, ang = 0.95 + Math.sin(elapsed * 0.25) * 0.06, d = F.low ? 3.6 : 5.6, ty = F.low ? 0.35 : 0.95;
     camera.position.set(F.x + Math.sin(ang) * d, ty + (F.low ? 1.1 : 0.6), F.z + Math.cos(ang) * d);
     camera.lookAt(F.x, ty - (F.low ? 0 : 0.12), F.z);
     renderer.render(scene, camera);
