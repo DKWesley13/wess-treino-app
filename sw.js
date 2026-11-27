@@ -1,17 +1,8 @@
-const CACHE_NAME = 'wess-treino-offline-v8';
+const CACHE_NAME = 'wess-treino-offline-v10';
 const ASSETS = [
   './',
   './index.html',
   './icons/apple-touch-icon.png',
-  './vendor/wt3d.js',
-  './vendor/musclemap.js',
-  './vendor/three/three.module.js',
-  './vendor/three/three.core.js',
-  './vendor/three/addons/GLTFLoader.js',
-  './vendor/three/addons/BufferGeometryUtils.js',
-  './vendor/three/addons/SkeletonUtils.js',
-  './vendor/avatar/wt_human.glb',
-  './vendor/avatar/wt_human_anims2.glb',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
